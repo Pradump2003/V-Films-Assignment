@@ -64,7 +64,7 @@ const FilmProduction = () => {
             <div className="mt-10 md:mt-4 flex flex-col items-center md:items-start">
               <p className="font-medium text-[#B2431F]">Explore now</p>
               <img
-                src="/public/Arrow.png"
+                src="/Arrow.png"
                 alt="arrow"
                 className="h-[30px] sm:h-[40px] w-[80px] sm:w-[100px]"
               />
