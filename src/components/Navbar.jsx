@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { HiOutlineMail } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -105,7 +106,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/vernam"
+                  to="/portfolio"
                   className={({ isActive }) =>
                     `transition cursor-pointer ${
                       isActive
@@ -118,7 +119,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <button className="flex items-center gap-2 bg-[#B2431F] text-white px-5 py-2 rounded-full hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition">
+            <button onClick={() => navigate("/contact")} className="flex items-center gap-2 bg-[#B2431F] text-white px-5 py-2 rounded-full hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition">
               Let's Talk
               <HiOutlineMail className="text-xl" />
             </button>
@@ -193,7 +194,7 @@ const Navbar = () => {
             Our Story
           </NavLink>
           <NavLink
-            to="/vernam"
+            to="/portfolio"
             className={({ isActive }) =>
               `w-full text-right transition py-2 ${
                 isActive
@@ -206,7 +207,7 @@ const Navbar = () => {
           </NavLink>
 
           <div className="w-full flex justify-end">
-            <button className="flex items-center gap-2 bg-[#B2431F] text-white px-5 py-2 rounded-full hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition">
+            <button onClick={() => navigate("/contact")} className="flex items-center gap-2 bg-[#B2431F] text-white px-5 py-2 rounded-full hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition">
               Let's Talk
               <HiOutlineMail className="text-xl" />
             </button>

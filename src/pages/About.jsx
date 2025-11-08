@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full flex flex-col lg:flex-row pt-10 px-6 lg:pl-14 min-h-screen bg-cover bg-center bg-no-repeat"
@@ -34,9 +36,7 @@ const About = () => {
         </div>
       </div>
 
-      
       <div className="w-full lg:w-[55%] flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:mt-10">
-        
         <div className="flex flex-col gap-4 mt-6 lg:mt-10 items-center lg:items-start">
           <img
             src="/Film Makers.png"
@@ -57,13 +57,15 @@ const About = () => {
             Take a closer look at the stories V brings to life.
           </p>
           <div className="flex justify-center lg:justify-center w-full mb-10 lg:mb-0">
-            <button className="inline-flex items-center bg-[#B2431F] text-white px-5 py-2 rounded-full mt-2 hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition">
+            <button
+              onClick={() => navigate("/portfolio")}
+              className="inline-flex items-center bg-[#B2431F] text-white px-5 py-2 rounded-full mt-2 hover:bg-[#FF9D7DB2] hover:text-[#B2431F] transition"
+            >
               View Portfolio
             </button>
           </div>
         </div>
 
-       
         <div className="flex flex-col mt-6 lg:mt-24 gap-4 items-center lg:items-start">
           <img
             src="/Art Curators.png"

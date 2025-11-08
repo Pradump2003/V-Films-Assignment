@@ -8,6 +8,8 @@ import Services from "./pages/Services";
 import FilmProduction from "./pages/FilmProduction";
 import Branding from "./pages/Branding";
 import ArtCreation from "./pages/ArtCreation";
+import PortFolio from "./pages/PortFolio";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/film-production" element={<FilmProduction />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/art-creation" element={<ArtCreation />} />
+        <Route path="/portfolio" element={<PortFolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
