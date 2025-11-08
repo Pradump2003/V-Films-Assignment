@@ -6,7 +6,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // Close menu on outside click (nice-to-have)
   useEffect(() => {
     function handleClickOutside(e) {
       if (
@@ -24,12 +23,10 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-transparent ">
       <div className="h-[90px] flex items-center justify-between px-6 md:px-10">
-        {/* Left: logo or brand */}
         <div className="flex items-center gap-3">
           <img src="/vFilms.png" alt="brand" className="h-6 w-auto md:h-8" />
         </div>
 
-        {/* Middle area: (desktop) show inline menu if toggled */}
         <div
           ref={menuRef}
           className={`flex items-center transition-all duration-300 gap-4
@@ -37,7 +34,6 @@ const Navbar = () => {
               isOpen ? "md:flex" : "md:flex"
             } /* keep md layout always available; visibility controlled below */`}
         >
-          {/* Desktop inline area (visible on md and up) */}
           <div
             className={`hidden md:flex items-center gap-6 mr-4
               ${
@@ -142,7 +138,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile: inline stacked menu below navbar (not popup) */}
       <div
         className={`md:hidden w-full bg-[url('/BG.png')] bg-cover bg-center backdrop-blur-sm transition-all duration-300 overflow-hidden
           ${isOpen ? "max-h-[360px] py-4" : "max-h-0 py-0"}`}

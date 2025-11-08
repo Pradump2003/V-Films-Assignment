@@ -7,9 +7,7 @@ const HomePage = () => {
       className="min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/BG.png')" }}
     >
-      {/* === MAIN SECTION === */}
       <div className="w-full flex flex-col lg:flex-row justify-center items-center pt-[90px] px-6 md:px-10 lg:px-[60px]">
-        {/* LEFT: Mandala + V Films */}
         <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
           <div className="relative h-[280px] w-[280px] sm:h-[350px] sm:w-[350px] lg:h-[400px] lg:w-[400px]">
             <img
@@ -26,7 +24,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* RIGHT: Text Section */}
         <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:py-10 text-center lg:text-center">
           <img
             src="/verman.png"

@@ -8,7 +8,6 @@ const FilmProduction = () => {
       className="w-full pt-16 min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/BG.png')" }}
     >
-      {/* Header */}
       <div className="flex flex-col items-center px-4 text-center">
         <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
           "Filmmaking is a chance to live many lifetimes." - Robert Altman
@@ -20,9 +19,7 @@ const FilmProduction = () => {
         />
       </div>
 
-      {/* Content Section */}
       <div className="flex flex-col md:flex-row w-full h-full md:px-20 py-12 px-6 md:gap-10">
-        {/* Left Section */}
         <div className="flex flex-col sm:flex-row gap-6 md:gap-10 justify-center items-center md:items-start md:justify-between lg:w-[45%]">
           <div className="flex md:flex-col justify-between items-center h-full w-full sm:w-auto">
             <button
@@ -47,7 +44,6 @@ const FilmProduction = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 justify-center items-center md:items-end text-center md:text-left lg:w-[55%]">
           <div className="flex flex-col justify-between h-full mt-6 md:mt-0">
             <div>
@@ -74,8 +70,6 @@ const FilmProduction = () => {
               />
             </div>
           </div>
-
-          {/* Right Cameras */}
 
           <div className="flex flex-col justify-center sm:justify-between md:justify-between items-center md:items-end h-full gap-6 ">
             <img

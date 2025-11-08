@@ -9,7 +9,7 @@ const Services = () => {
       className="w-full pt-12 min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/BG.png')" }}
     >
-      {/* Top Heading */}
+      
       <div className="flex flex-col items-center px-4 text-center">
         <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
           The storyboard reveals the breadth of our craft.
@@ -21,9 +21,9 @@ const Services = () => {
         />
       </div>
 
-      {/* Image Buttons Section */}
+      
       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mt-9 px-4">
-        {/* First Image Button */}
+        
         <div
           className="relative cursor-pointer transition-transform duration-300 hover:scale-105"
           onClick={() => navigate("/film-production")}
@@ -40,7 +40,7 @@ const Services = () => {
           />
         </div>
 
-        {/* Second Image Button */}
+       
         <div
           className="relative cursor-pointer transition-transform duration-300 hover:scale-105 sm:mt-8"
           onClick={() => navigate("/branding")}
@@ -57,7 +57,7 @@ const Services = () => {
           />
         </div>
 
-        {/* Third Image Button */}
+       
         <div
           className="relative cursor-pointer transition-transform duration-300 hover:scale-105"
           onClick={() => navigate("/art-creation")}
@@ -75,7 +75,7 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Bottom Border Image */}
+      
       <div className="bottom-0 left-0 w-full">
         <img
           src="/Frame 33.png"

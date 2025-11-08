@@ -6,7 +6,6 @@ const About = () => {
       className="w-full flex flex-col lg:flex-row pt-10 px-6 lg:pl-14 min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/BG.png')" }}
     >
-      {/* Left Section */}
       <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start mb-10 lg:mb-0">
         <img
           src="/Group9.png"
@@ -35,9 +34,9 @@ const About = () => {
         </div>
       </div>
 
-      {/* Right Section */}
+      
       <div className="w-full lg:w-[55%] flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:mt-10">
-        {/* Main Content */}
+        
         <div className="flex flex-col gap-4 mt-6 lg:mt-10 items-center lg:items-start">
           <img
             src="/Film Makers.png"
@@ -64,7 +63,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Side Content */}
+       
         <div className="flex flex-col mt-6 lg:mt-24 gap-4 items-center lg:items-start">
           <img
             src="/Art Curators.png"
