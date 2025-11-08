@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Island+Moments&display=swap');
+
+
+.bg-figma-noise {
+  background-color: #FFFFFF;
+  background-image: 
+    radial-gradient(#FDD0C1 1px, transparent 1px),
+    radial-gradient(#FDD0C1 1px, transparent 1px);
+  background-size: 6px 6px;          /* noise dot size */
+  background-position: 0 0, 2px 2px; /* makes it denser */
+  opacity: 0.9;                      /* softens the tone */
+  border-radius: 80px;               /* same as Figma */
+}
+
